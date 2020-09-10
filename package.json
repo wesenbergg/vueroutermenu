@@ -5,14 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "server": "json-server -p3001 --watch db.json"
   },
   "dependencies": {
     "bootstrap-vue": "^2.16.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-router": "^3.4.3",
-    "server": "json-server -p3001 --watch db.json"
+    "vue-router": "^3.4.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

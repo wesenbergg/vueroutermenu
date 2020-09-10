@@ -2,8 +2,27 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Vue kokeiluja",
+      "author": "wesenbergg",
+      "date": "10.09.2020"
+    },
+    {
+      "id": 2,
+      "title": "API-kurssi",
+      "author": "muser",
+      "date": "25.08.2020"
+    },
+    {
+      "id": 3,
+      "title": "Unknown title",
+      "author": "johndoe",
+      "date": "11.09.2001"
+    },
+    {
+      "id": 4,
+      "title": "Default",
+      "author": "null",
+      "date": "01.01.1978"
     }
   ],
   "comments": [

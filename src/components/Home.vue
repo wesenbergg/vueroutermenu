@@ -1,20 +1,41 @@
 <template>
-  <p class="homeText">
+  <div>
+    <p class="homeText">
     Tervetuloa tapahtumakalenteriin
   </p>
+    <b-table striped hover :items="posts"></b-table>
+  </div>
 </template>
 <script>
+
 export default {
-  name: 'Home'
-};
+  name: 'Home',
+  data() {
+    return {
+      posts: [
+        { title: "Loading", id: -1, author: "loading" }
+      ]
+    }
+  },
+  mounted: function() {
+    fetch('http://localhost:3001/posts', {
+      method: 'get'
+    })
+    .then(res => {
+      return res.json()
+    })
+    .then(data => {
+      this.posts = data
+    })
+  }
+}
 </script>
+
 <style scoped>
 .homeText{
   font-size: 35px;
-  color: red;
-  text-align: center;
-  position: relative;
-  top:30px;
-  text-shadow: 2px 2px 2px gray;
+  text-align: left;
+  font-size: 150%;
+  padding-top: 1rem;
 }
 </style>
