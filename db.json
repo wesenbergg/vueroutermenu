@@ -1,28 +1,10 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Vue kokeiluja",
-      "author": "wesenbergg",
-      "date": "10.09.2020"
-    },
-    {
-      "id": 2,
-      "title": "API-kurssi",
-      "author": "muser",
-      "date": "25.08.2020"
-    },
-    {
-      "id": 3,
-      "title": "Unknown title",
-      "author": "johndoe",
-      "date": "11.09.2001"
-    },
-    {
-      "id": 4,
-      "title": "Default",
-      "author": "null",
-      "date": "01.01.1978"
+      "title": "Kalenteritapahtuma",
+      "author": "Janteri",
+      "date": "10.9.2020",
+      "id": 60328
     }
   ],
   "comments": [
