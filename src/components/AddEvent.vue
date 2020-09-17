@@ -26,8 +26,8 @@
     methods: {
         submit: function() {
             this.message = { type: "", text: "" }
-            if (!this.title) this.message = { type: "error", text: "Korjaa otsikko: " + this.title }
-            if (!this.author) this.message = { type: "error", text: "Korjaa järjestäjän nimi" + this.author }
+            if (!this.title) return this.message = { type: "error", text: "Korjaa tapahtuman nimi: " + this.title }
+            if (!this.author) return this.message = { type: "error", text: "Korjaa järjestäjän nimi" + this.author }
             
             if(this.message.type === "") {
                 fetch('http://localhost:3001/posts', {
